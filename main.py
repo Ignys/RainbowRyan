@@ -30,19 +30,15 @@ async def on_message(message):
                     "- Amarelo =  🍋 \n"
                     "- Laranja  = 🍊 \n"
                     "- Limpar = 🌽 \n")
+    if message.content.lower().startswith(".a")
+      await client.send_message(message.channel, "http://prntscr.com/lsreya")
     if message.content.lower().startswith(".cancer"):
-        testeMsg = random.randint(1,2,3,4)
+        testeMsg = random.randint(1,2)
         if testeMsg == 1:
             await client.send_message(message.channel, "o zeza")
 
         if testeMsg == 2:
             await client.send_message(message.channel, "neeezambas")
-
-        if testeMsg == 3:
-            await client.send_message(message.channel, "se pá nem em")
-
-        if testeMsg == 4:
-            await client.send_message(message.channel, "queria")
 
 
     if message.content.lower().startswith(".keli"):
