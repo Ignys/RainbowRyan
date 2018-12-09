@@ -1,4 +1,4 @@
 discord.py
 asyncio
-random
+random.py
 PynaCl
