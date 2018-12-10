@@ -196,4 +196,4 @@ async def on_reaction_remove(reaction, user):
                 print("=============================================")
 
 
-client.run('NTIxMTAxNzgxMDg2ODk2MTUw.Du99-Q.vsJPll1aVaDezEqmu38TWg3RSGM')
+client.run('NTIxMTAxNzgxMDg2ODk2MTUw.DvAYzw.5AUNlEXTfWq0YE-NPzv0NptZATI')
