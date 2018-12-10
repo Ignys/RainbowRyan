@@ -32,7 +32,7 @@ async def on_message(message):
                     "- Limpar = 🌽 \n")
             if message.content.lower().startswith(".a"):
                 await client.send_message(message.channel, "http://prntscr.com/lsreya")
-            if message.content.lower().startswith(".teste cancer"):
+            if message.content.lower().startswith(".cancer"):
                 testeMsg = random.randint(1, 6)
                 if testeMsg == 1:
                     await client.send_message(message.channel, "neeeeeeeeeeeeee")
@@ -196,4 +196,4 @@ async def on_reaction_remove(reaction, user):
                 print("=============================================")
 
 
-client.run('NDg1MjcyNzMwMjAwMTc4Njg4.Du92bA.a4KRwU9tHRvzQGISJhD5yvP7hW0')
+client.run('NTIxMTAxNzgxMDg2ODk2MTUw.Du99-Q.vsJPll1aVaDezEqmu38TWg3RSGM')
