@@ -32,14 +32,25 @@ async def on_message(message):
                     "- Limpar = 🌽 \n")
             if message.content.lower().startswith(".a"):
                 await client.send_message(message.channel, "http://prntscr.com/lsreya")
-            if message.content.lower().startswith(".cancer"):
-                testeMsg = random.randint(1,2)
+            if message.content.lower().startswith(".teste cancer"):
+                testeMsg = random.randint(1, 6)
                 if testeMsg == 1:
-                    await client.send_message(message.channel, "o zeza")
+                    await client.send_message(message.channel, "neeeeeeeeeeeeee")
 
                 if testeMsg == 2:
-                    await client.send_message(message.channel, "neeezambas")
+                    await client.send_message(message.channel, "neeeebaaaaaaaaa")
 
+                if testeMsg == 3:
+                    await client.send_message(message.channel, "neeeeezambas")
+
+                if testeMsg == 4:
+                    await client.send_message(message.channel, "nem")
+
+                if testeMsg == 5:
+                    await client.send_message(message.channel, "pior que nem em")
+
+                if testeMsg == 6:
+                    await client.send_message(message.channel, "se pá nem em")
 
             if message.content.lower().startswith(".keli"):
                 await client.send_message(message.channel, "pegalá")
@@ -185,4 +196,4 @@ async def on_reaction_remove(reaction, user):
                 print("=============================================")
 
 
-client.run('NTIxMTAxNzgxMDg2ODk2MTUw.Du75hA.TXq00UAt5dhuvxImtqW8x6q_6Zk')
+client.run('NDg1MjcyNzMwMjAwMTc4Njg4.Du92bA.a4KRwU9tHRvzQGISJhD5yvP7hW0')
