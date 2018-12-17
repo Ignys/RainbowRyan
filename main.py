@@ -24,18 +24,18 @@ async def on_message(message):
             title="Escolha sua cor:",
             color=COR,
             description="- Urano =  💎 \n"
-                        "- Netuno  =  ☄️ \n"
+                        "- Netuno  =  ☄ \n"
                         "- Mercúrio  =  🍊 \n"
                         "- Saturno  =  🍋 \n"
-                        "- Terra  =  🥒\n"
-                        "- Venus =  🍎 \n"
-                        "- Jupiter =  🍑 \n"
+                        "- Terra  =  🥒 \n"
+                        "- Vênus =  🍎 \n"
+                        "- Jípiter =  🍑 \n"
                         "- Marte =  🍒 \n")
 
     botmsg = await client.send_message(message.channel, embed=embed1)
 
     await client.add_reaction(botmsg, "💎")
-    await client.add_reaction(botmsg, "☄️")
+    await client.add_reaction(botmsg, "☄")
     await client.add_reaction(botmsg, "🍊")
     await client.add_reaction(botmsg, "🍋")
     await client.add_reaction(botmsg, "🥒")
@@ -88,7 +88,7 @@ async def on_reaction_add(reaction, user):
         print("added to:", user, ", was added:", role)
         print("=============================================")
 
-    if reaction.emoji == "☄️" and msg.id == msg_id:  # and user == msg_user:
+    if reaction.emoji == "☄" and msg.id == msg_id:  # and user == msg_user:
         role = discord.utils.find(lambda r: r.name == "Netuno", msg.server.roles)
         await client.add_roles(user, role)
         print("=============================================")
@@ -117,14 +117,14 @@ async def on_reaction_add(reaction, user):
         print("=============================================")
 
     if reaction.emoji == "🍎" and msg.id == msg_id:  # and user == msg_user:
-        role = discord.utils.find(lambda r: r.name == "Venus", msg.server.roles)
+        role = discord.utils.find(lambda r: r.name == "Vênus", msg.server.roles)
         await client.add_roles(user, role)
         print("=============================================")
         print("added to:", user, ", was added:", role)
         print("=============================================")
 
     if reaction.emoji == "🍑" and msg.id == msg_id:  # and user == msg_user:
-        role = discord.utils.find(lambda r: r.name == "Jupiter", msg.server.roles)
+        role = discord.utils.find(lambda r: r.name == "Júpiter", msg.server.roles)
         await client.add_roles(user, role)
         print("=============================================")
         print("added to:", user, ", was added:", role)
@@ -149,7 +149,7 @@ async def on_reaction_remove(reaction, user):
         print("removed from:", user, ", was removed:", role)
         print("=============================================")
 
-    if reaction.emoji == "☄️" and msg.id == msg_id:  # and user == msg_user:
+    if reaction.emoji == "☄" and msg.id == msg_id:  # and user == msg_user:
         role = discord.utils.find(lambda r: r.name == "Netuno", msg.server.roles)
         await client.remove_roles(user, role)
         print("=============================================")
