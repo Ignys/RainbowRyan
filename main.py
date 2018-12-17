@@ -31,6 +31,17 @@ async def on_message(message):
                     "- Jupiter =  🍑 \n"
                     "- Marte =  🍒 \n")
                 
+            botmsg = await client.send_message(message.channel, embed=embed1)
+
+            await client.add_reaction(botmsg, "💎")
+            await client.add_reaction(botmsg, "☄️")
+            await client.add_reaction(botmsg, "🍊")
+            await client.add_reaction(botmsg, "🍋")
+            await client.add_reaction(botmsg, "🥒")
+            await client.add_reaction(botmsg, "🍎")
+            await client.add_reaction(botmsg, "🍑")
+            await client.add_reaction(botmsg, "🍒")
+                
             if message.content.lower().startswith(".a"):
                 await client.send_message(message.channel, "http://prntscr.com/lw9g9p")
             if message.content.lower().startswith(".f"):
@@ -57,17 +68,6 @@ async def on_message(message):
 
             if message.content.lower().startswith(".keli"):
                 await client.send_message(message.channel, "pegalá a poeira cósmica keli")
-
-            botmsg = await client.send_message(message.channel, embed=embed1)
-
-            await client.add_reaction(botmsg, "💎")
-            await client.add_reaction(botmsg, "☄️")
-            await client.add_reaction(botmsg, "🍊")
-            await client.add_reaction(botmsg, "🍋")
-            await client.add_reaction(botmsg, "🥒")
-            await client.add_reaction(botmsg, "🍎")
-            await client.add_reaction(botmsg, "🍑")
-            await client.add_reaction(botmsg, "🍒")
 
             global msg_id
             msg_id = botmsg.id
