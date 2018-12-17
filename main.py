@@ -7,7 +7,7 @@ client = discord.Client()
 COR =0x35acf1
 msg_id = None
 msg_user = None
-
+url = "https://i.imgur.com/6pzAWfP.jpg"
 
 @client.event
 async def on_ready():
@@ -32,6 +32,8 @@ async def on_message(message):
                     "- Limpar = 🌽 \n")
             if message.content.lower().startswith(".a"):
                 await client.send_message(message.channel, "http://prntscr.com/lsreya")
+            if message.content.lower().startswith(".f"):
+                await client.send_message(message.channel, url)    
             if message.content.lower().startswith(".cancer"):
                 testeMsg = random.randint(1, 6)
                 if testeMsg == 1:
