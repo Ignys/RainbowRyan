@@ -35,7 +35,7 @@ async def on_message(message):
     botmsg = await client.send_message(message.channel, embed=embed1)
 
     await client.add_reaction(botmsg, "💎")
-    await client.add_reaction(botmsg, "☄")
+    await client.add_reaction(botmsg, "☄️")
     await client.add_reaction(botmsg, "🍊")
     await client.add_reaction(botmsg, "🍋")
     await client.add_reaction(botmsg, "🥒")
