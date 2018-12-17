@@ -29,7 +29,7 @@ async def on_message(message):
                         "- Saturno  =  🍋 \n"
                         "- Terra  =  🥒 \n"
                         "- Vênus =  🍎 \n"
-                        "- Jípiter =  🍑 \n"
+                        "- Júpiter =  🍑 \n"
                         "- Marte =  🍒 \n")
 
     botmsg = await client.send_message(message.channel, embed=embed1)
