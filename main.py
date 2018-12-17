@@ -18,7 +18,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
 
-            if message.content.lower().startswith(".cor"):
+            if message.content.lower().startswith(".planetas"):
                 embed1 =discord.Embed(
                 title="Escolha sua cor:",
                 color=COR,
