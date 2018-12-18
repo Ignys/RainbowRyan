@@ -3,6 +3,4 @@ asyncio
 requests
 Image
 ImageDraw
-ImageFont
-ImageOps
 PynaCl
