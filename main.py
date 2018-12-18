@@ -2,8 +2,6 @@ import discord
 import asyncio
 import requests
 import random
-from io import BytesIO
-from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 
 client = discord.Client()
