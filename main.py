@@ -1,6 +1,10 @@
 import discord
 import asyncio
+import requests
 import random
+from io import BytesIO
+from PIL import Image, ImageDraw, ImageFont, ImageOps
+
 
 client = discord.Client()
 
@@ -9,6 +13,30 @@ msg_id = None
 msg_user = None
 url = "https://i.imgur.com/6pzAWfP.jpg"
 
+
+@client.event
+async def on_member_join(member):
+    canal = client.get_channel("524388854715908128")
+
+    Link = requests.get(member.avatar_url)
+    avatar = Image.open(BytesIO(Link.content))
+    avatar = avatar.resize((750, 750));
+    bigsize = (avatar.size[0] * 3,  avatar.size[1] * 3)
+    mask = Image.new('L', bigsize, 0)
+    draw = ImageDraw.Draw(mask)
+    draw.ellipse((0, 0) + bigsize, fill=255)
+    mask = mask.resize(avatar.size, Image.ANTIALIAS)
+    avatar.putalpha(mask)
+
+    output = ImageOps.fit(avatar, mask.size, centering=(0.5, 0.5))
+    output.putalpha(mask)
+    output.save('avatar.png')
+
+    #avatar = Image.open('avatar.png')
+    fundo = Image.open('imagem.jpg')
+    fundo.paste(avatar, (1156, 169), avatar)
+    fundo.save('Welcome.jpg')
+    await client.send_file(canal, 'Welcome.jpg')
 
 @client.event
 async def on_ready():
