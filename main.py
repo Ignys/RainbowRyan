@@ -35,7 +35,7 @@ async def on_message(message):
                         "- Marte =  🍒 \n")
 
 
-    if message.content.lower().startswith(".a"):
+    if message.content.lower().startswith("#adr"):
         await client.send_message(message.channel, "http://prntscr.com/lw9g9p")
     if message.content.lower().startswith(".f"):
         await client.send_message(message.channel, url)
