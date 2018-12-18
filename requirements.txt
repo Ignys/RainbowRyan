@@ -1,3 +1,9 @@
 discord.py
 asyncio
+requests
+BytesIO
+Image
+ImageDraw
+ImageFont
+ImageOps
 PynaCl
