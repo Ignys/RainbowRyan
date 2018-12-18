@@ -1,10 +1,6 @@
 discord.py
 asyncio
 requests
-IO
-PIL
-BytesIO
-Image
-ImageDraw
-ImageOps
+from io import BytesIO
+from PIL import Image, ImageDraw, ImageOps
 PynaCl
