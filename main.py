@@ -20,21 +20,7 @@ async def on_ready():
 
 
 @client.event
-async def on_message(message):
-    if message.content.lower().startswith(".planetas"):
-        embed1 = discord.Embed(
-            title="Escolha sua cor:",
-            color=COR,
-            description="- Urano =  💎 \n"
-                        "- Netuno  =  ☄ \n"
-                        "- Mercúrio  =  🍊 \n"
-                        "- Saturno  =  🍋 \n"
-                        "- Terra  =  🥒 \n"
-                        "- Vênus =  🍎 \n"
-                        "- Júpiter =  🍑 \n"
-                        "- Marte =  🍒 \n")
-
-
+async def on_message(message): 
     if message.content.lower().startswith("#adr"):
         await client.send_message(message.channel, "http://prntscr.com/lw9g9p")
     if message.content.lower().startswith(".f"):
@@ -61,7 +47,19 @@ async def on_message(message):
 
     if message.content.lower().startswith(".keli"):
         await client.send_message(message.channel, "pegalá a poeira cósmica keli")
-
+        
+        if message.content.lower().startswith(".planetas"):
+        embed1 = discord.Embed(
+            title="Escolha sua cor:",
+            color=COR,
+            description="- Urano =  💎 \n"
+                        "- Netuno  =  ☄ \n"
+                        "- Mercúrio  =  🍊 \n"
+                        "- Saturno  =  🍋 \n"
+                        "- Terra  =  🥒 \n"
+                        "- Vênus =  🍎 \n"
+                        "- Júpiter =  🍑 \n"
+                        "- Marte =  🍒 \n")
         botmsg = await client.send_message(message.channel, embed=embed1)
 
         await client.add_reaction(botmsg, "💎")
