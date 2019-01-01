@@ -1,4 +1,0 @@
-discord.py
-asyncio
-requests
-PynaCl
