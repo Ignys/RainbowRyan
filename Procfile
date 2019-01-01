@@ -1,1 +1,1 @@
-rainbowryan: python "main.py"
+rainbowryan: python "bot.py"
